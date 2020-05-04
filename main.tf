@@ -1,7 +1,7 @@
 provider "google" {
  credentials = file("/home/ella_anusha16/terraform.json")
  project     = "enhanced-bebop-271121"
- region      = "us-east1"
+ region      = "us-east4"
 }
 
 
@@ -9,7 +9,7 @@ provider "google" {
 resource "google_compute_instance" "default" {
  name         = "terraform"
  machine_type = "f1-micro"
- zone         = "us-east1-b"
+ zone         = "us-east4-b"
 
  boot_disk {
    initialize_params {
