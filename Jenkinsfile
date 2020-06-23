@@ -1,10 +1,11 @@
 pipeline {
-    agent { docker { image 'python:3.5.1' } }
-    stages {
-        stage('build') {
-            steps {
-                sh '/home/terraform --version'
-            }
-        }
-    }
-}
+   agent any
+
+   stages {
+      stage('Hello') {
+         steps {
+            echo 'Hello World' > /tmp/hello.txt
+         }
+      }
+   }
+}}
