@@ -6,9 +6,6 @@ pipeline {
                 sh """
 cd /home/code
 git clone https://github.com/gcp-architect/devops.git
-build_no=`cat /home/code/devops/build.txt`
-gcloud auth activate-service-account --key-file /home/ella_anusha16/key.json
-gsutil cp -r /home/code/devops  gs://gcpdevops/build/$build_no/
 """
 }
 }
