@@ -4,7 +4,7 @@ provider "google" {
  region      = "us-east1"
 }
 
-####
+
 // A single Google Cloud Engine instance
 resource "google_compute_instance" "default" {
  name         = "terraform"
