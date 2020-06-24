@@ -14,12 +14,6 @@ cd /home/code/devops
             }
         }
 
-stage('Deploy approval')
-input "Provide approval to deploy"
-steps {
-sh 'echo "deploy"'
-}
-
 
 stage('deploy') {
             steps {
