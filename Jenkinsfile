@@ -14,6 +14,11 @@ cd /home/code/devops
             }
         }
 
+stage('approve') {
+steps {
+input message: 'Approve to deploy code? (Click "Proceed" to continue)'
+	}
+}
 
 stage('deploy') {
             steps {
