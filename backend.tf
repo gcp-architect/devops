@@ -1,7 +1,7 @@
 terraform {
   backend "gcs" {
-    bucket  = "devops4me"
+    bucket  = "gcpdevops"
     prefix  = "terraform/state"
-    credentials = "/home/ella_anusha16/terraform.json"
+    credentials = "/home/ella_anusha16/key.json"
   }
 }

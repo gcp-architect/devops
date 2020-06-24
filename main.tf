@@ -1,6 +1,6 @@
 provider "google" {
- credentials = file("/home/ella_anusha16/terraform.json")
- project     = "enhanced-bebop-271121"
+ credentials = file("/home/ella_anusha16/key.json")
+ project     = "gcp-dev-276600"
  region      = "us-east1"
 }
 
