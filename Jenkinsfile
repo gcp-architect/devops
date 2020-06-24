@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                /bin/bash """
+                sh """
 cd /home/code
 git clone https://github.com/gcp-architect/devops.git
 export TF_DATA_DIR=/home/code/terraform_data
