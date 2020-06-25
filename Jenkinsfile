@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh '/home/code/scripts/build.sh'
+                sh '/home/scripts/build.sh'
 }
 }
 
 stage('plan') {
 steps {
-sh '/home/code/scripts/plan.sh'
+sh '/home/scripts/plan.sh'
 }
 }
 
@@ -21,7 +21,7 @@ input message: 'Approve to deploy code? (Click "Proceed" to continue)'
 
 stage('deploy') {
             steps {
-                sh '/home/code/scripts/deploy.sh'
+                sh '/home/scripts/deploy.sh'
             }
         }
     }
