@@ -1,7 +1,7 @@
 provider "google" {
  credentials = file("/home/ella_anusha16/key.json")
  project     = var.project
- region      = var.region
+ region      = "us-east1"
 }
 
 
